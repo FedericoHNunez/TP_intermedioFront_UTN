@@ -130,8 +130,11 @@ p {
      background-color: var(--background_color_cards);
      border-radius: 16px;
      padding: 24px;
+      transition: all 0.3s ease;
 }
 
+
+@media screen and (min-width: 768px){
 .benefice--card:hover {
      transform: translateY(-4px);
      transition: all 0.3s ease;
@@ -141,7 +144,7 @@ p {
      fill: var(--font_color_secondary);
      stroke: var(--font_color_secondary);
 }
-
+}
 
 
 .benefice--icon {
