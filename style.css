@@ -51,8 +51,12 @@ main {
      }
 }
 
-a {
+a,
+button {
      text-decoration: none;
+     border: none;
+     background: none;
+
 }
 
 h2 {
@@ -60,7 +64,7 @@ h2 {
      font-size: var(--h2_font_size_small);
      font-weight: var(--font_weight_bold);
      transition: all 0.3s ease;
-     padding: 64px 0 32px;
+     padding: 32px 0 32px;
      color: var(--font_color_primary);
 }
 
@@ -106,9 +110,9 @@ p {
      color: var(--font_color_quaternary);
      font-size: var(--font_size_small);
      letter-spacing: 0.5px;
-     padding: 14px 0px; 
+     padding: 14px 0px;
      display: flex;
-     align-items: center; 
+     align-items: center;
 }
 
 .learnMore--btn span {
@@ -118,10 +122,38 @@ p {
 .learnMore--btn span:hover {
      text-decoration: underline;
 }
+
 @media screen and (min-width: 768px) {
      .learnMore--btn {
-         display: inline-flex;
+          display: inline-flex;
      }
+}
+/**************Header ****************/
+.header {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 83px;
+     margin-bottom: 32px;
+     background-color: red;
+     position: sticky;
+     top: 0;
+     z-index: 1;
+}
+.header--left,
+.header--right {
+     display: flex;
+}
+
+
+.header--logo{
+     width: 140px;
+     height: 37px;
+}
+.header--logo img{
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
 }
 
 /********* benifices section *********/
@@ -231,10 +263,10 @@ p {
           max-width: 475px;
           max-height: 325px;
      }
-     
-     
+
+
      .pay--card--img img:hover {
-     transform: scale(1.05);
-     transition: all 0.3s ease;
-}
+          transform: scale(1.05);
+          transition: all 0.3s ease;
+     }
 }
