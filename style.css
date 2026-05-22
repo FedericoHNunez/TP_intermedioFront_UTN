@@ -103,7 +103,7 @@ p {
 }
 
 
-/* benifices section */
+/********* benifices section *********/
 
 .benefice--container {
      display: flex;
@@ -130,20 +130,20 @@ p {
      background-color: var(--background_color_cards);
      border-radius: 16px;
      padding: 24px;
-      transition: all 0.3s ease;
-}
-
-
-@media screen and (min-width: 768px){
-.benefice--card:hover {
-     transform: translateY(-4px);
      transition: all 0.3s ease;
 }
 
-.benefice--card:hover .benefice--icon {
-     fill: var(--font_color_secondary);
-     stroke: var(--font_color_secondary);
-}
+
+@media screen and (min-width: 768px) {
+     .benefice--card:hover {
+          transform: translateY(-4px);
+          transition: all 0.3s ease;
+     }
+
+     .benefice--card:hover .benefice--icon {
+          fill: var(--font_color_secondary);
+          stroke: var(--font_color_secondary);
+     }
 }
 
 
@@ -159,4 +159,35 @@ p {
      border-radius: 8px;
      fill: var(--font_color_tertiary);
      stroke: var(--font_color_tertiary);
+}
+
+
+/********* pay section ************/
+.pay--card {
+     background-color: red;
+     /* background-color: var(--background_color_cards); */
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+     margin-top: 16px;
+}
+
+.pay--card img {
+     flex: 1;
+     width: 100%;
+     height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+     .pay--card {
+          flex-direction: row;
+          height: 368px;
+     }
+
+     .pay--card__qr {
+          flex-direction: row-reverse;
+     }
+     .pay--card__qr img {
+    
+     }
 }

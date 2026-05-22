@@ -1,6 +1,6 @@
 logo: https://navenegocios.ar/content/dam/galicia/nave/images/logo/Logo%20Nave.jpg
 qr: https://navenegocios.ar/content/dam/galicia/nave/images/home/img_qr.png
-postnet: https://navenegocios.ar/content/dam/galicia/nave/images/home/img_terminal.png
+posnet: https://navenegocios.ar/content/dam/galicia/nave/images/home/img_terminal.png/jcr:content/renditions/Galicia-Desktop-PNG.png
 
 
 iconos:
