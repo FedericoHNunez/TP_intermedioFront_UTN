@@ -11,7 +11,7 @@
      --font_color_primary: #2b2b2b;
      --font_color_secondary: #6b6b6b;
      --font_color_tertiary: #632ade;
-     --font_color_quaternary: #370d73;
+     --font_color_quaternary: #360c72;
      --font_size_tiny: 14px;
      --font_size_small: 16px;
      --font_size_medium: 18px;
@@ -22,6 +22,7 @@
      --font_weight_bold: 700;
      --font_weight_medium: 600;
      --font_weight_regular: 400;
+
 }
 
 /* Reset */
@@ -44,7 +45,7 @@ main {
      margin: 0 auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1030px) {
      main {
           width: 100%;
      }
@@ -97,18 +98,38 @@ p {
 .center {
      display: flex;
      flex-direction: column;
-     justify-content: center;
      align-items: center;
      max-width: 1024px;
 }
 
+.learnMore--btn {
+     color: var(--font_color_quaternary);
+     font-size: var(--font_size_small);
+     letter-spacing: 0.5px;
+     padding: 14px 0px; 
+     display: flex;
+     align-items: center; 
+}
+
+.learnMore--btn span {
+     font-weight: var(--font_weight_bold);
+}
+
+.learnMore--btn span:hover {
+     text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+     .learnMore--btn {
+         display: inline-flex;
+     }
+}
 
 /********* benifices section *********/
 
 .benefice--container {
      display: flex;
      flex-direction: column;
-     gap: 32px;
+     gap: 16px;
      padding: 16px;
 
 
@@ -164,30 +185,56 @@ p {
 
 /********* pay section ************/
 .pay--card {
-     background-color: red;
-     /* background-color: var(--background_color_cards); */
      display: flex;
      flex-direction: column;
-     gap: 16px;
-     margin-top: 16px;
+     align-items: center;
+     background-color: var(--background_color_cards);
+     border-radius: 16px;
+     margin-bottom: 48px;
 }
 
-.pay--card img {
+.pay--card:last-child {
+     margin-bottom: 0;
+}
+
+.pay--card--img {
      flex: 1;
+     max-width: 420px;
+     max-height: 280px;
+}
+
+.pay--card--img img {
      width: 100%;
-     height: 100%;
+     object-fit: cover;
+     padding: 21px 18px;
+}
+
+
+.pay--card--text {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+     padding: 16px;
 }
 
 @media screen and (min-width: 768px) {
      .pay--card {
           flex-direction: row;
-          height: 368px;
      }
 
      .pay--card__qr {
           flex-direction: row-reverse;
      }
-     .pay--card__qr img {
-    
+
+     .pay--card--img {
+          max-width: 475px;
+          max-height: 325px;
      }
+     
+     
+     .pay--card--img img:hover {
+     transform: scale(1.05);
+     transition: all 0.3s ease;
+}
 }
