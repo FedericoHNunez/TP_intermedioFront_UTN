@@ -9,21 +9,35 @@
 </head>
 
 <body>
-    <header class="header ">
+    <header class="header">
         <div class="header--mobile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+            <div class="header--mobile--container">
+                <div class="header--logo--mobile">
+                    <a>
+                        <img src="./src/img/Isologo.png" alt="logo">
+                    </a>
+                </div>
 
+            </div>
         </div>
         <div class="header--desktop">
-            <div class="header--left">
-                <div class="header--logo">
-                    <img src="./src/img/nave-logo.png" alt="logo">
+            <div class="header--desktop--container">
+                <div class="header--left">
+                    <div class="header--logo">
+                        <img src="./src/img/nave-logo.png" alt="logo">
+                    </div>
+                    <button>Cobros</button>
+                    <button>Beneficios</button>
                 </div>
-                <button>Cobros</button>
-                <button>Beneficios</button>
-            </div>
-            <div class="header--right">
-                <button>Espacio Nave</button>
-                <button>Entrar a Nave</button>
+                <div class="header--right">
+                    <button>Espacio Nave</button>
+                    <button>Entrar a Nave</button>
+                </div>
             </div>
         </div>
     </header>
@@ -102,8 +116,11 @@
                     Conocé a los comercios que eligen Nave todos los días 💜
                 </p>
             </div>
-            <a href="#">Conocer mas</a>
-        </div>   
+            <a href="#">
+                <span>Conocer</span>
+                <span>mas</span>
+            </a>
+        </div>
 
         <!--------------pay section------------------->
         <section class="pay">
@@ -152,27 +169,27 @@
                     <h3>Terminal Nave Point</h3>
                     <p>Aceptá pagos con tarjetas (contactless, con tecnología NFC) o QR y resolvé cada venta con
                         autonomía, estés donde estés.</p>
-                    <div>     
-                    <a class="learnMore--btn" href="#">
-                        <span>
-                            Conocer mas
-                        </span>
-                        <svg width="24" height="24" viewBox="0 0 25 24" fill="none" stroke="#360c72"
-                            xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
-                                fill="#2B2B2B"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
-                                fill="black" fill-opacity="0.2"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
-                                fill="black" fill-opacity="0.2"></path>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
-                                fill="black" fill-opacity="0.2"></path>
-                        </svg>
-                    </a>
+                    <div>
+                        <a class="learnMore--btn" href="#">
+                            <span>
+                                Conocer mas
+                            </span>
+                            <svg width="24" height="24" viewBox="0 0 25 24" fill="none" stroke="#360c72"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="#2B2B2B"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="black" fill-opacity="0.2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="black" fill-opacity="0.2"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.11612 20.3839C7.62796 19.8957 7.62796 19.1043 8.11612 18.6161L14.2322 12.5L8.11612 6.38388C7.62796 5.89573 7.62796 5.10427 8.11612 4.61612C8.60427 4.12796 9.39573 4.12796 9.88388 4.61612L16.8839 11.6161C17.372 12.1043 17.372 12.8957 16.8839 13.3839L9.88388 20.3839C9.39573 20.872 8.60427 20.872 8.11612 20.3839Z"
+                                    fill="black" fill-opacity="0.2"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </article>
