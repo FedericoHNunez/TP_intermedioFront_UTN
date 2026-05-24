@@ -24,6 +24,7 @@
      --font_weight_regular: 400;
      --max_width: 1022px;
      --color_black: #000000;
+     --color_white: #ffffff;
 }
 
 /* Reset */
@@ -41,7 +42,6 @@ html {
 
 
 main {
-     padding: 24px 0;
      width: 90%;
      margin: 0 auto;
 }
@@ -57,6 +57,7 @@ button {
      text-decoration: none;
      border: none;
      background: none;
+     cursor: pointer;
 
 }
 
@@ -74,6 +75,10 @@ h3 {
      font-weight: var(--font_weight_medium);
      transition: all 0.3s ease;
      color: var(--font_color_primary);
+}
+
+section {
+     padding: 16px 0;
 }
 
 p {
@@ -116,6 +121,7 @@ p {
      position: sticky;
      top: 0;
      z-index: 1;
+     border-bottom: 1px solid var(--background_color_tertiary);
 
 }
 
@@ -166,29 +172,30 @@ p {
      height: 100%;
 }
 
-.header--left{
+.header--left {
      display: flex;
      align-items: center;
      justify-content: flex-start;
      gap: 6px;
 }
-.header--left::after{
+
+.header--left::after {
      content: "";
      width: 2px;
-     margin: 16px 0;
-     padding: 12px 8px;
-     border-right: solid  1px #2b2b2b4f;
+     padding: 12px 4px;
+     border-left: solid 1px #2b2b2b4f;
 }
+
 .header--right {
      flex: 1;
      display: flex;
      justify-content: flex-end;
-     gap: 24px;
+     gap: 12px;
 }
 
 .header--logo {
      width: 140px;
-     height: 37px;
+     height: 71px;
 }
 
 .header--logo img {
@@ -212,29 +219,53 @@ p {
      }
 
 }
-.header--desktop--btn_left{
-     padding: 16px 24px;
+
+.header--desktop--btn_left,
+.header--desktop--btn_right,
+.header--desktop--btn_right_space,
+.header--desktop--btn_right_login {
+     padding: 10px 36px;
      font-weight: var(--font_weight_bold);
      font-size: var(--font_size_tiny);
-     color: var(--font_color_primary);
      font-family: var(--font-family);
-}
-
-.header--desktop--btn_left:hover{
-     color: var(--font_color_quaternary);
-     background-color: var(--background_color_tertiary);
      border-radius: 50px;
 }
 
+.header--desktop--btn_left {
+     color: var(--font_color_primary);
+}
 
+.header--desktop--btn_left:hover {
+     color: var(--font_color_quaternary);
+     background-color: var(--background_color_tertiary);
+}
 
 .header--desktop--btn_right {
-    padding: 6px 18px;
-    margin: 0 8px;
-    font-weight: var(--font_weight_medium);
-    font-size: var(--font_size_tiny);
      color: var(--font_color_primary);
-     font-family: var(--font-family);
+}
+
+.header--desktop--btn_right_space {
+     color: var(--font_color_tertiary);
+     border: 1px solid var(--font_color_tertiary);
+     transition: all 0.3s ease;
+}
+
+.header--desktop--btn_right_login {
+     color: var(--color_white);
+     background-color: var(--font_color_tertiary);
+     border: 1px solid transparent;
+     transition: all 0.3s ease;
+}
+
+.header--desktop--btn_right_space:hover {
+     background-color: var(--background_color_secondary);
+     color: var(--background_color_quaternary);
+}
+
+.header--desktop--btn_right_login:hover {
+     background-color: var(--background_color_secondary);
+     color: var(--font_color_quaternary);
+     border: 1px solid var(--font_color_quaternary);
 }
 
 
@@ -245,7 +276,7 @@ p {
      display: flex;
      flex-direction: column;
      gap: 16px;
-     margin-bottom: 16px;
+     padding: 16px 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -269,12 +300,7 @@ p {
 @media screen and (min-width: 768px) {
      .benefice--card:hover {
           transform: translateY(-4px);
-          transition: all 0.3s ease;
-     }
 
-     .benefice--card:hover .benefice--icon {
-          fill: var(--font_color_secondary);
-          stroke: var(--font_color_secondary);
      }
 }
 
@@ -290,6 +316,11 @@ p {
      border-radius: 8px;
      fill: var(--font_color_tertiary);
      stroke: var(--font_color_tertiary);
+}
+
+.benefice--card:hover .benefice--icon {
+     fill: var(--font_color_secondary);
+     stroke: var(--font_color_secondary);
 }
 
 /************ banner ***************/
@@ -333,7 +364,7 @@ p {
 .banner a:hover {
      background-color: var(--color_black);
      color: var(--background_color_secondary);
-     transition: all 0.5s ease;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -341,7 +372,6 @@ p {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          margin: 16px 0;
      }
 
      .banner h2 {
