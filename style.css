@@ -122,7 +122,6 @@ p {
      top: 0;
      z-index: 1;
      border-bottom: 1px solid var(--background_color_tertiary);
-
 }
 
 .header--desktop {
@@ -163,6 +162,7 @@ p {
      height: 100%;
      margin: 0 auto;
      padding: 0 16px;
+     max-width: 992px;
 }
 
 .header--desktop--container {
@@ -206,7 +206,6 @@ p {
 
 @media screen and (min-width: 992px) {
      .header {
-
           height: 83px;
      }
 
