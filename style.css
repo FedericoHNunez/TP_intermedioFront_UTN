@@ -63,7 +63,8 @@ button {
      background: none;
      cursor: pointer;
 }
- img{
+
+img{
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -84,6 +85,7 @@ h3 {
      transition: all 0.3s ease;
      color: var(--font_color_primary);
 }
+
 ul {
      list-style: none;
 }
@@ -117,7 +119,6 @@ p {
 }
 
 /**************Header ****************/
-
 .header {
      height: 72px;
      background-color: var(--background_color_cards);
@@ -398,7 +399,6 @@ p {
 }
 
 .pay--card--img img {
-    
      padding: 21px 18px;
 }
 
@@ -454,12 +454,12 @@ p {
      }
 }
 
-/* ********* footer ************ */
-
+/********** footer *************/
 .footer--links{
      margin: 0 auto;
      width: 90%;
 }
+
 .footer--logo--container {
      width: 46px;
      height: 44px;       
@@ -476,9 +476,16 @@ p {
      text-align: center;
      font-size: var(--font_size_tiny);
 }
+
 .footer--links--list a{
      color: var(--font_color_secondary);
 }
+
+.footer--links--list a:hover{
+     color: var(--font_color_tertiary);
+     text-decoration: underline;
+}
+
 .footer--links--title{
      color: var(--font_color_secondary);
      padding: 8px 0px ;
