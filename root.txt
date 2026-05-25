@@ -1,0 +1,44 @@
+:root {
+      /* 🎨 PRIMITIVOS (paleta pura, nunca se usan directamente en HTML) */
+        --color-violet-500: #8a4ff7;
+          --color-violet-200: #e4d1ff;
+            --color-violet-100: #f1ebff;
+              --color-violet-700: #632ade;
+                --color-violet-900: #360c72;
+                  --color-gray-900: #2b2b2b;
+                    --color-gray-600: #6b6b6b;
+                      --color-gray-50:  #fbfaff;
+                        --color-white:    #ffffff;
+                          --color-black:    #000000;
+
+                            /* 🧩 SEMÁNTICOS (estos son los que usas en tu CSS/HTML) */
+                              --bg-page:     var(--color-gray-50);
+                                --bg-card:     var(--color-white);
+                                  --bg-tertiary: var(--color-violet-100);
+                                    --bg-primary:  var(--color-violet-500);
+                                      --bg-secondary:var(--color-violet-200);
+
+                                        --text-primary:   var(--color-gray-900);
+                                          --text-secondary: var(--color-gray-600);
+                                            --text-accent:    var(--color-violet-700);
+                                              --text-on-dark:   var(--color-violet-900);
+
+                                                /* 🔤 TIPOGRAFÍA (en rem para accesibilidad) */
+                                                  --font-family: "Inter", system-ui, sans-serif;
+                                                    
+                                                      --font-size-xs:   0.875rem;  /* 14px */
+                                                        --font-size-sm:   1rem;      /* 16px */
+                                                          --font-size-base: 1.125rem;  /* 18px */
+                                                            --font-size-lg:   1.25rem;   /* 20px */
+                                                              --font-size-xl:   1.5rem;    /* 24px */
+                                                                --font-size-2xl:  1.875rem;  /* 30px */
+                                                                  --font-size-3xl:  2.5rem;    /* 40px */
+
+                                                                    --font-weight-regular: 400;
+                                                                      --font-weight-medium:  600;
+                                                                        --font-weight-bold:    700;
+
+                                                                          /* 📐 LAYOUT */
+                                                                            --container-max: 1022px;
+}
+}
