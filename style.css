@@ -421,7 +421,7 @@ p {
           flex-direction: row;
      }
 
-     .pay--card__qr {
+     .pay--card:nth-child(2n) {
           flex-direction: row-reverse;
      }
 
