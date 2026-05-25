@@ -40,7 +40,6 @@ html {
      font-family: var(--font-family);
 }
 
-
 main {
      width: 90%;
      margin: 0 auto;
@@ -111,7 +110,6 @@ p {
      align-items: center;
      max-width: var(--max_width);
 }
-
 
 /**************Header ****************/
 
@@ -267,9 +265,6 @@ p {
      border: 1px solid var(--font_color_quaternary);
 }
 
-
-
-
 /********* benifices section *********/
 .benefice--container {
      display: flex;
@@ -379,8 +374,6 @@ p {
      }
 }
 
-
-
 /********* pay section ************/
 .pay--card {
      display: flex;
@@ -406,7 +399,6 @@ p {
      object-fit: cover;
      padding: 21px 18px;
 }
-
 
 .pay--card--text {
      flex: 1;
