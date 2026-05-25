@@ -277,7 +277,7 @@ p {
      padding: 16px 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
      .benefice--container {
           flex-direction: row;
      }
@@ -295,7 +295,7 @@ p {
      transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
      .benefice--card:hover {
           transform: translateY(-4px);
 
@@ -410,7 +410,7 @@ p {
      padding: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
      .pay--card {
           flex-direction: row;
      }
@@ -499,7 +499,7 @@ p {
 }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
      .footer--links{
           max-width: var(--max_width); 
           margin: 0 auto;
