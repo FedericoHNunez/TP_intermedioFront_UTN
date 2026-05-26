@@ -2,30 +2,50 @@
 /* Google Fonts */
 
 :root {
+/* primitives colors */
+     --color-violet-100: #f1ebff;
+     --color-violet-200: #e4d1ff;
+     --color-violet-500: #8a4ff7;
+     --color-violet-700: #632ade;
+     --color-violet-900: #360c72;
+     --color-white: #ffffff;
+     --color-gray-50: #fbfaff;
+     --color-gray-600: #6b6b6b;
+     --color-gray-900: #2b2b2b;
+     --color-black: #000000;
+
+/* semantic colors */
+
+     --text-color-primary: var(--color-gray-900);
+     --text-color-secondary: var(--color-gray-600);
+     --text-color-accent: var(--color-violet-700);
+     --text-color-on-dark: var(--color-violet-900);
+
+     --background_color_page: var(--color-gray-50);
+     --background_color_cards:var(--color-white);
+     --background_color_tertiary:  var(--color-violet-100);
+     --background_color_primary: var(--color-violet-500);
+     --background_color_secondary:var(--color-violet-200);
+
+/* Typography */
+
      --font-family: "Inter", sans-serif;
-     --background_color_page: #fbfaff;
-     --background_color_cards: #ffffff;
-     --background_color_tertiary: #f1ebff;
-     --background_color_primary: #8a4ff7;
-     --background_color_secondary: #e4d1ff;
-     --font_color_primary: #2b2b2b;
-     --font_color_secondary: #6b6b6b;
-     --font_color_tertiary: #632ade;
-     --font_color_quaternary: #360c72;
-     --font_size_tiny: 14px;
-     --font_size_small: 16px;
-     --font_size_medium: 18px;
-     --h3_font_size_small: 20px;
-     --h3_font_size_large: 24px;
-     --h2_font_size_small: 30px;
-     --h2_font_size_large: 40px;
-     --font_weight_bold: 700;
-     --font_weight_medium: 600;
-     --font_weight_regular: 400;
-     --max_width: 1022px;
-     --color_black: #000000;
-     --color_white: #ffffff;
+     --font-size-tiny: 1.4rem;
+     --font-size-small: 1.6rem;
+     --font-size-medium: 1.8rem;
+     --h3-font-size-small: 2rem;
+     --h3-font-size-large: 2.4rem;
+     --h2-font-size-small: 3rem;
+     --h2-font-size-large: 4rem;
+
+     --font-weight-regular: 400;
+     --font-weight-medium: 600;
+     --font-weight-bold: 700;
+
+/* Layout */
+     --container-max: 1022px;
 }
+
 
 /* Reset */
 * {
@@ -36,6 +56,7 @@
 
 /* Global Styles */
 html {
+     font-size: 62.5%;
      background-color: var(--background_color_page);
      font-family: var(--font-family);
 }
@@ -45,14 +66,14 @@ main {
      margin: 0 auto;
 }
 
-footer{
-     background-color: var(--color_white);
+footer {
+     background-color: var(--color-white);
 
 }
 
 @media screen and (min-width: 1024px) {
      main {
-          max-width: var(--max_width);
+          max-width: var(--container-max);
      }
 }
 
@@ -64,7 +85,7 @@ button {
      cursor: pointer;
 }
 
-img{
+img {
      width: 100%;
      height: 100%;
      object-fit: cover;
@@ -72,18 +93,22 @@ img{
 
 h2 {
      text-align: center;
-     font-size: var(--h2_font_size_small);
-     font-weight: var(--font_weight_bold);
+     font-size: var(--h2-font-size-small);
+     font-weight: var(--font-weight-bold);
      transition: all 0.3s ease;
-     padding: 32px 0 32px;
-     color: var(--font_color_primary);
+     padding: 3.2rem 0 3.2rem;
+     color: var(--text-color-primary);
 }
 
 h3 {
-     font-size: var(--h3_font_size_small);
-     font-weight: var(--font_weight_medium);
+     font-size: var(--h3-font-size-small);
+     font-weight: var(--font-weight-medium);
      transition: all 0.3s ease;
-     color: var(--font_color_primary);
+     color: var(--text-color-primary);
+}
+
+h4 {
+     font-size: var(--font-size-small);
 }
 
 ul {
@@ -91,41 +116,41 @@ ul {
 }
 
 section {
-     padding: 16px 0;
+     padding: 1.6rem 0;
 }
 
 p {
-     font-size: var(--font_size_small);
-     font-weight: var(--font_weight_regular);
+     font-size: var(--font-size-small);
+     font-weight: var(--font-weight-regular);
      line-height: 1.5;
-     color: var(--font_color_secondary)
+     color: var(--text-color-secondary)
 }
 
 @media screen and (min-width: 992px) {
      h2 {
-          font-size: var(--h2_font_size_large);
+          font-size: var(--h2-font-size-large);
           transition: all 0.3s ease;
      }
 
      h3 {
-          font-size: var(--h3_font_size_large);
+          font-size: var(--h3-font-size-large);
           transition: all 0.3s ease;
      }
 
      p {
-          font-size: var(--font_size_medium);
+          font-size: var(--font-size-medium);
           transition: all 0.3s ease;
      }
 }
 
 /**************Header ****************/
 .header {
-     height: 72px;
+     height: 7.2rem;
      background-color: var(--background_color_cards);
      position: sticky;
      top: 0;
      z-index: 1;
-     border-bottom: 1px solid var(--background_color_tertiary);
+     border-bottom: 0.1rem solid var(--background_color_tertiary);
 }
 
 .header--desktop {
@@ -142,12 +167,12 @@ p {
 
 .header--mobile svg {
      position: absolute;
-     left: 24px;
+     left: 2.4rem;
 }
 
 .header--logo--mobile {
-     width: 42px;
-     height: 40px;
+     width: 4.2rem;
+     height: 4rem;
 }
 
 .header--logo--mobile img {
@@ -158,15 +183,15 @@ p {
 
 .header--desktop--btn_left,
 .header--desktop--btn_right {
-     padding: 6px 18px;
+     padding: 0.6rem 1.8rem;
 }
 
 .header--desktop {
-     width: var(--max_width);
+     width: var(--container-max);
      height: 100%;
      margin: 0 auto;
-     padding: 0 16px;
-     max-width: 992px;
+     padding: 0 1.6rem;
+     max-width: 99.2rem;
 }
 
 .header--desktop--container {
@@ -180,26 +205,26 @@ p {
      display: flex;
      align-items: center;
      justify-content: flex-start;
-     gap: 6px;
+     gap: 0.6rem;
 }
 
 .header--left::after {
      content: "";
-     width: 2px;
-     padding: 12px 4px;
-     border-left: solid 1px #2b2b2b4f;
+     width: 0.2rem;
+     padding: 1.2rem 0.4rem;
+     border-left: solid 0.1rem #2b2b2b4f;
 }
 
 .header--right {
      flex: 1;
      display: flex;
      justify-content: flex-end;
-     gap: 12px;
+     gap: 1.2rem;
 }
 
 .header--logo {
-     width: 140px;
-     height: 50px;
+     width: 14rem;
+     height: 5rem;
 }
 
 .header--logo img {
@@ -208,7 +233,7 @@ p {
 
 @media screen and (min-width: 992px) {
      .header {
-          height: 83px;
+          height: 8.3rem;
      }
 
      .header--mobile {
@@ -225,19 +250,19 @@ p {
 .header--desktop--btn_right,
 .header--desktop--btn_right_space,
 .header--desktop--btn_right_login {
-     padding: 10px 36px;
-     font-weight: var(--font_weight_bold);
-     font-size: var(--font_size_tiny);
+     padding: 1rem 3.6rem;
+     font-weight: var(--font-weight-bold);
+     font-size: var(--font-size-tiny);
      font-family: var(--font-family);
-     border-radius: 50px;
+     border-radius: 5rem;
 }
 
 .header--desktop--btn_left {
-     color: var(--font_color_primary);
+     color: var(--text-color-primary);
 }
 
 .header--desktop--btn_left:hover {
-     color: var(--font_color_quaternary);
+     color: var(--text-color-on-dark);
      background-color: var(--background_color_tertiary);
 }
 
@@ -246,15 +271,15 @@ p {
 }
 
 .header--desktop--btn_right_space {
-     color: var(--font_color_tertiary);
-     border: 1px solid var(--font_color_tertiary);
+     color: var(--text-color-accent);
+     border: 0.1rem solid var(--text-color-accent);
      transition: all 0.3s ease;
 }
 
 .header--desktop--btn_right_login {
-     color: var(--color_white);
-     background-color: var(--font_color_tertiary);
-     border: 1px solid transparent;
+     color: var(--color-white);
+     background-color: var(--text-color-accent);
+     border: 0.1rem solid transparent;
      transition: all 0.3s ease;
 }
 
@@ -265,16 +290,16 @@ p {
 
 .header--desktop--btn_right_login:hover {
      background-color: var(--background_color_secondary);
-     color: var(--font_color_quaternary);
-     border: 1px solid var(--font_color_quaternary);
+     color: var(--text-color-on-dark);
+     border: 0.1rem solid var(--text-color-on-dark);
 }
 
 /********* benifices section *********/
 .benefice--container {
      display: flex;
      flex-direction: column;
-     gap: 26px;
-     padding: 16px 16px;
+     gap: 2.6rem;
+     padding: 1.6rem 1.6rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -288,10 +313,10 @@ p {
      display: flex;
      flex-direction: column;
      justify-content: flex-start;
-     gap: 16px;
+     gap: 1.6rem;
      background-color: var(--background_color_cards);
-     border-radius: 16px;
-     padding: 24px;
+     border-radius: 1.6rem;
+     padding: 2.4rem;
      transition: all 0.3s ease;
 }
 
@@ -308,59 +333,60 @@ p {
      justify-content: center;
      align-items: center;
      background-color: var(--background_color_tertiary);
-     width: 62px;
-     height: 62px;
-     padding: 16px;
-     border-radius: 8px;
-     fill: var(--font_color_tertiary);
-     stroke: var(--font_color_tertiary);
+     width: 6.2rem;
+     height: 6.2rem;
+     padding: 1.6rem;
+     border-radius: 0.8rem;
+     fill: var(--text-color-accent);
+     stroke: var(--text-color-accent);
 }
 
 .benefice--card:hover .benefice--icon {
-     fill: var(--font_color_secondary);
-     stroke: var(--font_color_secondary);
+     fill: var(--text-color-secondary);
+     stroke: var(--text-color-secondary);
 }
 
 /************ banner ***************/
 .banner {
      display: flex;
      flex-direction: column;
-     padding: 32px 64px;
-     gap: 24px;
+     padding: 3.2rem 6.4rem;
+     gap: 2.4rem;
      background-color: var(--background_color_secondary);
      width: 100%;
-     border-radius: 32px
+     border-radius: 3.2rem
 }
 
 .banner h2 {
      padding: 0;
-     margin-bottom: 16px;
+     margin-bottom: 1.6rem;
      text-align: left;
-     font-weight: var(--font_weight_medium);
+     font-weight: var(--font-weight-medium);
      letter-spacing: 0.5px;
-     font-size: var(--h3_font_size_large);
-     color: var(--font_color_quaternary);
+     font-size: var(--h3-font-size-large);
+     color: var(--text-color-on-dark);
 }
 
 .banner p {
-     color: var(--font_color_quaternary);
-     font-size: var(--font_size_medium);
+     color: var(--text-color-on-dark);
+     font-size: var(--font-size-medium);
 }
 
 .banner a {
+     font-size: var(--font-size-small);
      display: flex;
-     gap: 4px;
+     gap: 0.4rem;
      justify-content: center;
      background-color: var(--background_color_cards);
-     padding: 10px 32px;
-     border-radius: 16px;
-     font-weight: var(--font_weight_bold);
-     border: 1px solid transparent;
+     padding: 1rem 3.2rem;
+     border-radius: 1.6rem;
+     font-weight: var(--font-weight-bold);
+     border: 0.1rem solid transparent;
      transition: all 0.5s ease;
 }
 
 .banner a:hover {
-     background-color: var(--color_black);
+     background-color: var(--color-black);
      color: var(--background_color_secondary);
 
 }
@@ -373,7 +399,7 @@ p {
      }
 
      .banner h2 {
-          font-size: var(--h2_font_size_small);
+          font-size: var(--h2-font-size-small);
 
      }
 }
@@ -384,8 +410,8 @@ p {
      flex-direction: column;
      align-items: center;
      background-color: var(--background_color_cards);
-     border-radius: 16px;
-     margin-bottom: 48px;
+     border-radius: 1.6rem;
+     margin-bottom: 4.8rem;
 }
 
 .pay--card:last-child {
@@ -394,20 +420,20 @@ p {
 
 .pay--card--img {
      flex: 1;
-     max-width: 420px;
-     max-height: 280px;
+     max-width: 42rem;
+     max-height: 28rem;
 }
 
 .pay--card--img img {
-     padding: 21px 18px;
+     padding: 2.1rem 1.8rem;
 }
 
 .pay--card--text {
      flex: 1;
      display: flex;
      flex-direction: column;
-     gap: 24px;
-     padding: 16px;
+     gap: 2.4rem;
+     padding: 1.6rem;
 }
 
 @media screen and (min-width: 769px) {
@@ -420,8 +446,8 @@ p {
      }
 
      .pay--card--img {
-          max-width: 475px;
-          max-height: 325px;
+          max-width: 47.5rem;
+          max-height: 32.5rem;
      }
 
 
@@ -432,16 +458,16 @@ p {
 }
 
 .learnMore--btn {
-     color: var(--font_color_quaternary);
-     font-size: var(--font_size_small);
+     color: var(--text-color-on-dark);
+     font-size: var(--font-size-small);
      letter-spacing: 0.5px;
-     padding: 14px 0px;
+     padding: 1.4rem 0;
      display: flex;
      align-items: center;
 }
 
 .learnMore--btn span {
-     font-weight: var(--font_weight_bold);
+     font-weight: var(--font-weight-bold);
 }
 
 .learnMore--btn span:hover {
@@ -455,63 +481,63 @@ p {
 }
 
 /********** footer *************/
-.footer--links{
+.footer--links {
      margin: 0 auto;
      width: 90%;
 }
 
 .footer--logo--container {
-     width: 46px;
-     height: 44px;       
-     margin: 8px auto;
+     width: 4.6rem;
+     height: 4.4rem;
+     margin: 0.8rem auto;
 }
 
-.footer--links--list{
+.footer--links--list {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: flex-start;
-     gap: 16px;
-     padding: 16px 0;
+     gap: 1.6rem;
+     padding: 1.6rem 0;
      text-align: center;
-     font-size: var(--font_size_tiny);
+     font-size: var(--font-size-tiny);
 }
 
-.footer--links--list a{
-     color: var(--font_color_secondary);
+.footer--links--list a {
+     color: var(--text-color-secondary);
 }
 
-.footer--links--list a:hover{
-     color: var(--font_color_tertiary);
+.footer--links--list a:hover {
+     color: var(--text-color-accent);
      text-decoration: underline;
 }
 
-.footer--links--title{
-     color: var(--font_color_secondary);
-     padding: 8px 0px ;
+.footer--links--title {
+
+     color: var(--text-color-secondary);
+     padding: 0.8rem 0;
 }
 
-@media screen and (min-width: 480px) {    
-.footer--links--container{
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width: 480px) {
+     .footer--links--container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
 
-}
+     }
 }
 
-@media screen and (min-width: 769px){
-     .footer--links{
-          max-width: var(--max_width); 
+@media screen and (min-width: 769px) {
+     .footer--links {
+          max-width: var(--container-max);
           margin: 0 auto;
      }
-     .footer--logo--container{
-          margin: 8px 8px;
+
+     .footer--logo--container {
+          margin: 0.8rem 0.8rem;
      }
-     .footer--links--container{
+
+     .footer--links--container {
           grid-template-columns: repeat(4, 1fr);
-     
-     }  
-} 
 
-
-
+     }
+}
