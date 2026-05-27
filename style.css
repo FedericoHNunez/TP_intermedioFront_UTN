@@ -21,7 +21,7 @@
      --text-color-accent: var(--color-violet-700);
      --text-color-on-dark: var(--color-violet-900);
 
-     --background_color_page: var(--color-gray-50);
+     --background-color-page: var(--color-gray-50);
      --background_color_cards:var(--color-white);
      --background_color_tertiary:  var(--color-violet-100);
      --background_color_primary: var(--color-violet-500);
@@ -57,7 +57,7 @@
 /* Global Styles */
 html {
      font-size: 62.5%;
-     background-color: var(--background_color_page);
+     background-color: var(--background-color-page);
      font-family: var(--font-family);
 }
 
